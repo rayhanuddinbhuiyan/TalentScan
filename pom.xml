@@ -51,27 +51,18 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- JWT - JJWT API -->
+		<!-- JSP & JSTL -->
 		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-api</artifactId>
-			<version>0.12.5</version>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-
-		<!-- JWT - JJWT Implementation -->
 		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-impl</artifactId>
-			<version>0.12.5</version>
-			<scope>runtime</scope>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 		</dependency>
-
-		<!-- JWT - JJWT Jackson -->
 		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-jackson</artifactId>
-			<version>0.12.5</version>
-			<scope>runtime</scope>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
 		</dependency>
 
 		<!-- Lombok -->
@@ -109,6 +100,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<mainClass>com.resumescreening.ResumeScreeningApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
